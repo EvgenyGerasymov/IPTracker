@@ -33,7 +33,7 @@ Users should be able to:
 
 ## Links
 
-- Live Site URL: https://iptracker-evgenygerasymov.vercel.app/
+- Live Site URL: iptracker-proj.vercel.app
 
 ## Built with
 
