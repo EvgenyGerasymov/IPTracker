@@ -41,3 +41,4 @@ Users should be able to:
 - Mobile-first workflow
 - Tailwind
 - [React](https://reactjs.org/) - JS library
+- [TypeScript](https://www.typescriptlang.org/)
