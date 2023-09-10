@@ -36,17 +36,13 @@ function Form(props: Props) {
             timezone: `${res.data?.location.timezone}`,
             isp: `${res.data.isp}`,
           });
-          axios
-            .get(
-              `https://maps.googleapis.com/maps/api/geocode/json?address=${res.data?.location.region}&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`
-            )
-            .then((res) => {
-              props.setLat(res.data?.results[0].geometry.location.lat);
-              props.setLng(res.data?.results[0].geometry.location.lng);
-            })
-            .catch((e) => {
-              props.setError(true);
-            });
+          return axios.get(
+            `https://maps.googleapis.com/maps/api/geocode/json?address=${res.data?.location.region}&key=${process.env.REACT_APP_GOOGLE_MAPS_API_KEY}`
+          );
+        })
+        .then((res) => {
+          props.setLat(res.data?.results[0].geometry.location.lat);
+          props.setLng(res.data?.results[0].geometry.location.lng);
         })
         .catch((e) => {
           props.setError(true);
