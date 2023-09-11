@@ -8,7 +8,7 @@ interface Props {
 function Error(props: Props) {
   return (
     <>
-      <div className="absolute top-1/2  flex flex-col justify-center items-center w-fit mx-10 bg-veryDarkGrey p-10 gap-4 rounded-lg z-30">
+      <div className="absolute top-1/2 left-0 right-0 md:mx-auto flex flex-col justify-center items-center w-fit mx-10 bg-veryDarkGrey p-10 gap-4 rounded-lg z-30">
         <p className="text-center text-white">
           Sorry,it looks like there was an issue with getting the data
         </p>
